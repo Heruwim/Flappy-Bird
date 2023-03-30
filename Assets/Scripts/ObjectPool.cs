@@ -49,7 +49,7 @@ public class ObjectPool : MonoBehaviour
     {
         foreach (var item in _pool)
         {
-            item.SetActive(true);
+            item.SetActive(false);
         }
     }
 }
