@@ -24,6 +24,7 @@ public class Game : MonoBehaviour
     private void Start()
     {
         Time.timeScale = 0;
+        _gameOverScreen.Close();
         _startScreen.Open();
     }
 
