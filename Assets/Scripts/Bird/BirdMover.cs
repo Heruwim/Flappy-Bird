@@ -26,7 +26,7 @@ public class BirdMover : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
         {
             _rigidbody.velocity = new Vector2(_speed, 0);
             transform.rotation = _maxRotation;
